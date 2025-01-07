@@ -20,7 +20,7 @@ const transporter = nodemailer.createTransport({
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.send('Express on vercel')
 });
 
 router.get('/config', function(req, res) {
